@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'INCONTRO - Turni Bar</title>
+<meta name="theme-color" content="#FFD60A">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Fredoka',sans-serif}
+body{background:#0f0f0f;color:#111;min-height:100vh;display:flex;justify-content:center}
+.phone{width:100%;max-width:430px;background:#FFD60A;min-height:100vh;position:relative;display:flex;flex-direction:column}
+.header{text-align:center;padding:30px 20px 10px}
+.logo{width:84px;height:84px;background:#fff;border:4px solid #000;border-radius:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:44px;box-shadow:5px 5px 0 #000;transform:rotate(-2deg)}
+.title{font-size:34px;font-weight:800;letter-spacing:-1px;line-height:.9}
+.title span{display:inline-block;background:#000;color:#FFD60A;padding:3px 14px;border-radius:14px;margin-top:8px;transform:rotate(-1deg);font-size:22px}
+.subtitle{font-size:11px;margin-top:12px;opacity:.7;max-width:230px;margin-left:auto;margin-right:auto;line-height:1.3;font-weight:600}
+.main{flex:1;padding:22px 18px 30px}
+.card-btn{width:100%;padding:20px 22px;border:3px solid #000;border-radius:20px;font-size:19px;font-weight:800;display:flex;justify-content:space-between;align-items:center;cursor:pointer;box-shadow:5px 5px 0 #000;margin-bottom:16px}
+.btn-black{background:#111;color:#FFD60A}.btn-white{background:#fff;color:#111}
+.icon-circle{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px}
+.black .icon-circle{background:#FFD60A;color:#000}.white .icon-circle{background:#FF5722;color:#fff}
+.view{display:none;position:fixed;inset:0;background:#FFD60A;z-index:10;overflow:auto;max-width:430px;margin:0 auto}
+.view.active{display:flex;flex-direction:column}
+.view-header{padding:16px;display:flex;align-items:center;gap:12px;position:sticky;top:0;background:#FFD60A;z-index:5;border-bottom:3px solid #000}
+.back{width:46px;height:46px;border:3px solid #000;border-radius:14px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer;box-shadow:2px 2px 0 #000}
+.calendar{padding:14px}.month-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.month-nav button{border:3px solid #000;background:#fff;border-radius:12px;padding:8px 16px;font-weight:800;box-shadow:2px 2px 0 #000}
+.weekdays{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:8px;font-size:12px;font-weight:700;text-align:center}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.day{aspect-ratio:1;background:#fff;border:2.5px solid #000;border-radius:14px;display:flex;flex-direction:column;padding:5px;font-size:12px;min-height:58px}
+.day.empty{background:transparent;border:0}.day.today{outline:3px solid #FF5722}
+.day-num
